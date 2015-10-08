@@ -30,14 +30,14 @@ int main(int argc, const char * argv[]) {
          for (int k=0; k<stringForCounting.length; k++){
              for(int i=0; i<rowString.length/L; i++){
               	if  (GetPosition(T[k])==-2){
-                    NSString *string = [rowString substringWithRange:NSMakeRange(rowString.length - L, L)];
-                    printf([[NSString stringWithFormat:@"%@", string] UTF8String]);
+                    NSString *tempString = [rowString substringWithRange:NSMakeRange(rowString.length - L, L)];
+                    printf([[NSString stringWithFormat:@"%@", tempString] UTF8String]);
                     break;
                	}
 
                 if (i == GetPosition(T[k])){
-                    NSString *string2 = [rowString substringWithRange:NSMakeRange(i * L, L)];
-                    printf([[NSString stringWithFormat:@"%@", string2] UTF8String]);
+                    NSString *tempString = [rowString substringWithRange:NSMakeRange(i * L, L)];
+                    printf([[NSString stringWithFormat:@"%@", tempString] UTF8String]);
                 } 
             }
         }
