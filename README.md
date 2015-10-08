@@ -1,1 +1,1 @@
-# Games from https://www.codingame.com
+Codingame solutions - codingame.com
